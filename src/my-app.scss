@@ -1,0 +1,19 @@
+nav {
+  background: #eee;
+  display: flex;
+}
+
+a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    background: #eeeeee;
+    color: #4dd0e1 !important;
+  }
+}
+
+img {
+  object-fit: cover !important;
+}

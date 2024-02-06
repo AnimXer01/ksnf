@@ -1,0 +1,30 @@
+<import from="../../components/button-episode/button-episode"></import>
+<div class="container-fluid px-3 px-md-4 px-lg-5">
+    <div class="row p-3 gap-3">
+        <div class="col-sm-12 col-md-4">
+            <img class="img-fluid" src=${anime.image} alt="Random Anime Image">
+        </div>
+
+        <div class="col-sm-12 col-md-7">
+            <h1 class="mt-3 mt-md-0">${anime.title}</h1>
+            <p class="text-secondary fs-5">${anime.otherName}</p>
+            <p>${anime.description}</p>
+            <div class="d-flex gap-2 flex-wrap">
+                <p class="fw-semibold info">${anime.releaseDate} | </p>
+                <p class="fw-semibold info">${anime.totalEpisodes} episodes |</p>
+                <p class="fw-semibold info">${anime.status} |</p>
+                <p class="fw-semibold info text-uppercase">${anime.subOrDub} |</p>
+                <p class="fw-semibold info">${anime.type} </p>
+                <template repeat.for="genre of anime.genres">
+                    <p class="fw-semibold info"> | ${genre} </p>
+                </template>
+            </div>
+            <button type="button" class="btn btn-primary" click.trigger="watchNow()">Watch Now</button>
+        </div>
+
+    </div>
+
+    <button-episode param-id.bind="anime"></button-episode>
+
+
+</div>

@@ -1,0 +1,37 @@
+<import from="./nav-bar.scss"></import>
+
+<header class="header">
+    <div class="container-fluid p-3 p-md-5">
+        <div class="row">
+            <div class="col-sm-4 col-md-3 order-2 order-sm-1">
+                <div class="d-flex">
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-sm-4 col-md-6 order-1  order-md-2 text-center">
+                <a href="" class="logo">
+                    <h1>Ani<span style="color: #4dd0e1;">go</span>
+                    </h1>
+                </a>
+
+            </div>
+            <div class="col-sm-4 col-md-3 order-3 order-sm-3">
+                <div class="header__switches">
+                    <a href="javascript:void(0);" class="search-switch" click.trigger="showSearch()" external><i
+                            class="fa fa-search"></i></a>
+                    <a href="#" class="nav-switch"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="main__menu">
+            <ul class="nav__menu justify-content-center w-100">
+                <li><a load="home" class="menu--active">Home</a></li>
+                <li class="disabled"><a load="movies" disabled>Movies</a></li>
+                <li><a load="top-rated">Top-Rated</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
